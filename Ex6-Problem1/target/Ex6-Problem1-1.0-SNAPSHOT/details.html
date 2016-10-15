@@ -1,0 +1,18 @@
+<table>
+    <tr>
+        <th>
+            Name
+        </th>
+         <th>
+            Id
+        </th>
+         <th>
+            Age
+        </th>
+    </tr>
+    <tr ng-repeat="person in personCtrl.all | filter: {id: personCtrl.id.id}">
+        <td>{{person.name}}</td>
+        <td>{{personCtrl.id.id}}</td>
+        <td>{{person.age}}</td>
+    </tr>
+</table>
